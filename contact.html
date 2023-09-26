@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+        <title>Sean Andrew Stanek</title>
+        
+    </head>
+
+<body>
+    
+    <header class="page-header">
+        <img src="./img/Logo.png" alt="logo" class="page-header_item page-header_logo">
+        <nav class="navigation-list page-header_item">
+            <a href="index.html" role="menuitem" class="navigation-list_item">
+                <img src="./img/home.png" class="navigation-list_item navigation-list_item--active">
+            </a>
+            <a href="about.html" role="menuitem" class="navigation-list_item">
+                <img src="./img/about.png" class="navigation-list_item">
+            </a>
+            <a href="contact.html" role="menuitem" class="navigation-list_item">
+                <img src="./img/contact.png" class="navigation-list_item navigation-list_item-active">
+            </a>
+            <a href="work.html" role="menuitem" class="navigation-list_item">
+                <img src="./img/work.png" class="navigation-list_item">
+            </a>
+        </nav>
+    </header>
+
+    <main class="wide-margins">
+        
+        <h1> Contact Info</h1>
+        <div>
+            102-1204 Gongsae-ro 226<br>
+            Giheung-gu Yongin-si Gyeongi-do 17100<br>
+            South Korea<br>
+            <br>
+            Telephone: <a href="tel:+821093651945" aria-label="plus 8 2 1 0 dash 9 3 6 5 dash 1 9 4 5">+82 10-9365-1945</a><br>
+            Discord: <a href="https://discordapp.com/users/323806687750389771">Dartimos</a><br>
+            Email: <a href="mailto:sean.andrew.stanek@gmail.com">Sean.Andrew.Stanek@gmail.com</a><br>
+            <br> <hr> <br>
+            <p> Send me a direct message now.</p>
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">Email: </label>
+                <input type="email" id="contact-email" required><br><br>
+    
+                <!-- Allowing international
+                I think the regex for Korea would be "\d{3}[\-]\d{4}[\-]\d{4}"-->
+                <label class="standard-label" for="telephone">Telephone: </label>
+                <input type="tel" id="telephone"><br><br>
+    
+                <label class="standard-label" for="Message">Message: </label>
+                <textarea maxlength="240" id="Message" required></textarea>
+    
+                <br><input type="submit" value="Send Message">
+                <button type="button">Fake Button</button>
+            </form>
+    
+            <br>
+            <a href="mailto:sean.andrew.stanek@gmail.com">Or Email Me</a>
+        </div>
+
+    </main>
+    <footer class="contact-footer wide-margins" >
+
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>
