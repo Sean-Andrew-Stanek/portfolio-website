@@ -3,7 +3,7 @@
 }
 
 :root {
-    /* PRIMARY */
+    /* PRIMARY *
 
     --background-color: #000015;
     --primary-color: #99FFFF;
@@ -19,7 +19,7 @@
     --highlight-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
     --highlight-color-background: rgba(255, 255, 255, 0.02);
 
-    /*
+    */
     --background-color: #FFFFFF;
     --primary-color: #005555;
     --primary-color-contrast10: rgba(0, 0, 0, 1);
@@ -34,7 +34,6 @@
     --button-focus-outline-contrast: rgba(0, 0, 0, 1);
     --highlight-gradient: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
     --highlight-color-background: rgba(0, 0, 0, 0.02);
-    
 
     /* Secondary "Light Mode" WIP */
 }
