@@ -11,23 +11,23 @@
 }
 
 :root {
-    /* PRIMARY *
+    /* PRIMARY */
 
-    --background-color: #000015;
-    --primary-color: #99FFFF;
-    --primary-color-contrast10: rgba(255, 255, 255, 1);
-    --primary-color-contrast9: #F0F8FF;
-    --primary-color-contrast4: #BBFFFF;
-    --primary-color-link: #00AAAA;
-    --primary-color-counter-contrast10: rgba(0, 0, 0, 1);
+    /*
+    --background-color: #FFFFFF;
+    --primary-color: #005555;
+    --primary-color-contrast10: rgba(0, 0, 0, 1);
+    --primary-color-contrast9: #001111;
+    --primary-color-contrast4: #002222;
+    --primary-color-link: #006666;
+    --primary-color-counter-contrast10: rgba(255, 255, 255, 1);
     --navigation-highlight-color: rgba(0, 255, 255, 0.5);
-    --darken-area5: rgba(0, 0, 0, 0.5);
-    --darken-area3: rgba(0, 0, 0, 0.3);
+    --darken-area5: rgba(0, 0, 0, 0.8);
+    --darken-area3: rgba(0, 0, 0, 0.5);
     --button-color-focus-outline: #1010FF;
-    --highlight-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-    --highlight-color-background: rgba(255, 255, 255, 0.02);
-
-    */
+    --button-focus-outline-contrast: rgba(0, 0, 0, 1);
+    --highlight-gradient: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+    --highlight-color-background: rgba(0, 0, 0, 0.02);
 
     /* Secondary "Light Mode" WIP */
 }
@@ -137,8 +137,8 @@ svg * {
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #FFFFFF;
-    color: #005555;
+    background-color: #000015;
+    color: #99FFFF;
     font-size: 16px;
     line-height: 1.6;
     font-weight: 400;
@@ -226,19 +226,19 @@ td {
 
 h1 {
     /* aliceblue */
-    color: #001111;
+    color: #F0F8FF;
     font-size: 30px;
     font-weight: 700;
 }
 
 h2 {
-    color: #002222;
+    color: #BBFFFF;
     font-size: 24px;
     font-weight: 700;
 }
 
 h3 {
-    color: #001111;
+    color: #F0F8FF;
     font-size: 18px;
     font-weight: 700;
 }
@@ -246,19 +246,19 @@ h3 {
 /* Anchors */
 
 a:link {
-    color: #006666;
+    color: #00AAAA;
 }
 
 a:visited {
-    color: #006666;
+    color: #00AAAA;
 }
 
 a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 a:focus {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 /* I need to figure out how to use this without it affecting the top anchor
@@ -271,15 +271,15 @@ a:focus {
 } */
 
 a:active {
-    color: #005555;
+    color: #99FFFF;
 }
 
 /* Buttons */
 
 button {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 700;
     padding: 10px;
@@ -287,7 +287,7 @@ button {
     display: inline-block;
     font-family: inherit;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     text-decoration: none;
     -webkit-transition: 0.2s background-color, 0.2s color;
     -o-transition: 0.2s background-color, 0.2s color;
@@ -295,9 +295,9 @@ button {
 }
 
 .button {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 700;
     padding: 10px;
@@ -305,7 +305,7 @@ button {
     display: inline-block;
     font-family: inherit;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     text-decoration: none;
     -webkit-transition: 0.2s background-color, 0.2s color;
     -o-transition: 0.2s background-color, 0.2s color;
@@ -314,22 +314,22 @@ button {
 
 button:hover {
     background-color: #1010FF;
-    color: rgba(0, 0, 0, 1);
+    color: undefined;
 }
 
 .button:hover {
     background-color: #1010FF;
-    color: rgba(0, 0, 0, 1);
+    color: undefined;
 }
 
 button:active {
     background-color: rgba(0, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .button:active {
     background-color: rgba(0, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 button:focus {
@@ -357,7 +357,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: flex;
     width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     border-width: 4px;
 }
 
@@ -400,7 +400,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navigation-list_item img:hover {
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 1);
+    border-color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 255, 255, 0.5);
 }
 
@@ -408,7 +408,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     background-color: rgba(0, 255, 255, 0.5);
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 1);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 /* .navigation-list li {
@@ -417,11 +417,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 } */
 
 .highlight {
-    background: rgba(0, 0, 0, 1);
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
-    background-color: rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 1);
+    background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    background-color: rgba(255, 255, 255, 0.02);
     border-width: 1px;
-    border-color: #006666;
+    border-color: #00AAAA;
     border-style: solid;
 }
 
