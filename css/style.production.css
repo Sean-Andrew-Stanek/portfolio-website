@@ -394,8 +394,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #F0F8FF;
-    border: white 2px solid;
 }
 
 .navigation-list_item img {
