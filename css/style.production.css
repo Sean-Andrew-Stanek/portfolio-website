@@ -365,6 +365,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .page-header_item {
+    padding: 5px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50px;
             flex: 0 1 50px;
