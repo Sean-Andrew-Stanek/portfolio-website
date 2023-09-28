@@ -493,6 +493,10 @@ button:hover, button:focus, .button:hover, .button:focus {
     .grid_item:first-child {
         grid-column-start: span 1;
     }
+
+    .page-header_logo {
+        max-width: 100px;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -503,6 +507,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 
     .grid_item:first-child {
         grid-column-start: span 2;
+    }
+
+    .page-header_logo {
+        max-width: 150px;
     }
 }
 
