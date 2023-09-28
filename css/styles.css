@@ -354,7 +354,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 500px) and (orientation: landscape) {
     .grid {
         grid-template-columns: 1fr;
     }
@@ -365,6 +365,20 @@ button:hover, button:focus, .button:hover, .button:focus {
 
     .page-header_logo {
         max-width: 100px;
+    }
+}
+
+@media all and (max-width: 500px) and (orientation: portrait) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_item:first-child {
+        grid-column-start: span 1;
+    }
+
+    .page-header_logo {
+        max-width: 50px;
     }
 }
 
