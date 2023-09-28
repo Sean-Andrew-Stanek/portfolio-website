@@ -391,7 +391,9 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: flow;
 }
 
-.navigation-list_item {
+.navigation-list_item img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     max-height: 75px;
     margin: 5px;
     padding: 5px;
