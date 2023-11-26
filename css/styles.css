@@ -3,7 +3,7 @@
 }
 
 :root {
-    /* PRIMARY *
+    /* PRIMARY */
 
     --background-color: #000015;
     --primary-color: #99FFFF;
@@ -19,7 +19,7 @@
     --highlight-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
     --highlight-color-background: rgba(255, 255, 255, 0.02);
 
-    */
+    /*
     --background-color: #FFFFFF;
     --primary-color: #005555;
     --primary-color-contrast10: rgba(0, 0, 0, 1);
@@ -70,6 +70,24 @@
     100% {
         transform: translate(100px, 48px);
     }
+}
+
+.work-details a, div{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.work-details img{
+    width: 100%;
+}
+
+.work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: start;
+
 }
 
 svg * {
@@ -161,12 +179,12 @@ td {
 }
 
 /* Headers */
-
-h1 {
-    /* aliceblue */
+h1, h3 {
     color: var(--primary-color-contrast9);
-    font-size: 30px;
     font-weight: 700;
+}
+h1 {
+    font-size: 30px;
 }
 
 h2 {
@@ -176,18 +194,12 @@ h2 {
 }
 
 h3 {
-    color: var(--primary-color-contrast9);
     font-size: 18px;
-    font-weight: 700;
 }
 
 /* Anchors */
 
-a:link {
-    color: var(--primary-color-link);
-}
-
-a:visited {
+a:link, a:visited {
     color: var(--primary-color-link);
 }
 
@@ -298,11 +310,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     border-color: var(--primary-color-contrast10);
 }
 
-/* .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-} */
-
 .highlight {
     background: var(--primary-color-contrast10);
     background: var(--highlight-gradient);
@@ -314,7 +321,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .grid_item {
     display: inline-block;
-    width: 33%;
 }
 
 @supports (display:grid) {
@@ -398,5 +404,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 
     h1 {
         font-size: 22px;
+    }
+
+    .work-details {
+        grid-template-columns: 1fr;
     }
 }
