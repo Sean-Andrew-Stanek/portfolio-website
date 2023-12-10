@@ -8,6 +8,7 @@
     --background-color: #000015;
     --primary-color: #99FFFF;
     --primary-color-contrast10: rgba(255, 255, 255, 1);
+    --primary-contrast-alpha-10: rgba(255, 255, 255, .1);
     --primary-color-contrast9: #F0F8FF;
     --primary-color-contrast4: #BBFFFF;
     --primary-color-link: #00AAAA;
@@ -23,6 +24,7 @@
     --background-color: #FFFFFF;
     --primary-color: #005555;
     --primary-color-contrast10: rgba(0, 0, 0, 1);
+    --primary-contrast-alpha-10: rgba(0, 0, 0, .1);
     --primary-color-contrast9: #001111;
     --primary-color-contrast4: #002222;
     --primary-color-link: #006666;
@@ -168,17 +170,22 @@ h1, h3 {
     font-weight: 700;
 }
 h1 {
-    font-size: 30px;
+    font-size: 36px;
+    margin: 0;
 }
 
 h2 {
-    color: var(--primary-color-contrast4);
-    font-size: 24px;
+    color: var(--primary-color-contrast9);
+    font-size: 30px;
     font-weight: 700;
 }
 
 h3 {
     font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
 }
 
 /* Anchors */
@@ -319,8 +326,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 .work-example * {
@@ -338,10 +343,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 .work-example h3,
 .portfolio-main h1 {
     text-align: center;
+    margin: 10px 20px;
 }
 
-.work-example div{
-    margin: 0 10px;
+ .work-example h4{
+    margin: auto 30px;
 }
 
 .work-example img{
@@ -359,6 +365,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
+    margin-top: auto;
 }
 
 .work-example-repository a {
@@ -367,8 +374,42 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .work-example-repository h3 {
-    margin: 0 10px 10px;
-    flex-grow: 1;
+    margin: auto;
+    color: inherit;
+}
+
+.work-example-repository-button {
+    background-color: transparent;
+    color: var(--primary-color-contrast10);
+    border: 3px solid var(--primary-color-contrast10);
+
+    width: 200px;
+    border-radius: 20px;
+    animation: none;
+
+    transition: color 0.5s, background-color 1s, border-color 1s;
+}
+
+.work-example-repository-button:hover {
+    border-color: var(--primary-color-link);
+    background-color: var(--primary-color-contrast10);
+
+    background-clip: text;
+    color: transparent;
+
+    animation: work-example-repository-button-animation 0.5s infinite;
+}
+
+@keyframes work-example-repository-button-animation {
+    0% {
+        background-color: var(--primary-color-contrast10);
+    }
+    50% {
+        background-color: var(--primary-color);
+    }
+    100% {
+        background-color: var(--primary-color-contrast10);
+    }
 }
 
 @supports (display:grid) {
@@ -409,6 +450,11 @@ button:hover, button:focus, .button:hover, .button:focus {
     .page-header_logo {
         max-width: 150px;
     }
+
+    .work-example div{
+        margin: 0 20px;
+    }
+
 }
 
 @media all and (max-width: 750px) {
@@ -423,5 +469,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 
     h1 {
         font-size: 22px;
+    }
+
+    .work-example div{
+        margin: 0 10px;
     }
 }
