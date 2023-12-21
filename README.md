@@ -34,7 +34,7 @@ Welcome to my portfolio showcasing my full-stack development abilities. This por
 
 ### This Website!
 
-![This Website](./img/this-website.PNG)
+![This Website]
 
 - **Description:** Designed a dynamic and visually appealing portfolio website showcasing proficiency in front-end development. The site features engaging animations, responsive design, and a versatile color scheme.
 - **Tech Stack:** HTML, CSS, JavaScript, SVG Animation
@@ -43,7 +43,7 @@ Welcome to my portfolio showcasing my full-stack development abilities. This por
 
 ### Movie API / Client
 
-![Movie API / Client](./img/movie-api.PNG)
+![Movie API / Client]
 
 - **Description:** Designed and implemented a Full Stack Movie Database Application, showcasing a blend of backend and frontend expertise.
 - **Tech Stack:** Node.js, Express.js, MongoDB, Mongoose, Passport.js, JWT, bcrypt, React.js, React Bootstrap, React Router, JavaScript, HTML, CSS
