@@ -96,6 +96,10 @@ svg * {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+html {
+    background-image: url("../img/Perlin.png");
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--background-color);
