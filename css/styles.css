@@ -143,6 +143,11 @@ body {
     margin: 30px 10%;
 }
 
+.footer-image {
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
 .contact-footer {
     padding: 30px 20px;
 }
