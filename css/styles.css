@@ -5,8 +5,9 @@
 :root {
     /* PRIMARY */
 
-    --background-color: #000015;
-    --primary-color: #99FFFF;
+    --background-color: rgba(0, 0, 21, .8);
+    --background-alpha: rgba(0, 0, 21, 1);
+    --primary-color: #EEEEFF;
     --primary-color-contrast10: rgba(255, 255, 255, 1);
     --primary-contrast-alpha-10: rgba(255, 255, 255, .1);
     --primary-color-contrast9: #F0F8FF;
@@ -21,7 +22,8 @@
     --highlight-color-background: rgba(255, 255, 255, 0.02);
 
     /*
-    --background-color: #FFFFFF;
+    --background-color: rgba(200, 200, 200, 1);
+    --background-alpha: rgba(200, 200, 200, .5);
     --primary-color: #005555;
     --primary-color-contrast10: rgba(0, 0, 0, 1);
     --primary-contrast-alpha-10: rgba(0, 0, 0, .1);
@@ -80,6 +82,14 @@ svg * {
     transform-box: fill-box;
 }
 
+.about-svg {
+    margin: 20px auto 20px;
+}
+
+.about-flex p {
+    margin: 15px 15px;
+}
+
 .sun {
     animation-duration: 4s;
     animation-name: color-change;
@@ -103,10 +113,16 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--primary-color-contrast9);
+    text-shadow:
+    1px 1px 0 var(--background-alpha),
+    -1px 1px 0 var(--background-alpha),
+    -1px -1px 0 var(--background-alpha),
+    1px -1px 0 var(--background-alpha);
     font-size: 16px;
     line-height: 1.6;
     font-weight: 400;
+    min-height: 100dvh;
 }
 
 .about-flex {
@@ -116,19 +132,15 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: auto 20%;
+    margin: auto 10%;
 }
 
-.about-flex h2 {
+.about-flex h1 {
     text-align: center;
 }
 
-.scale-svg-size {
-    max-height: 200px;
-}
-
 .wide-margins {
-    margin: auto 20%;
+    margin: 30px 10%;
 }
 
 .contact-footer {
@@ -140,7 +152,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 10% auto 5%;
+    margin: auto auto 0px;
+    padding-bottom: 20px;
 }
 
 .profile {
@@ -171,6 +184,11 @@ td {
 /* Headers */
 h1, h3 {
     color: var(--primary-color-contrast9);
+    text-shadow:
+    1px 1px 0 var(--background-alpha),
+    -1px 1px 0 var(--background-alpha),
+    -1px -1px 0 var(--background-alpha),
+    1px -1px 0 var(--background-alpha);
     font-weight: 700;
 }
 h1 {
@@ -180,7 +198,12 @@ h1 {
 
 h2 {
     color: var(--primary-color-contrast9);
-    font-size: 30px;
+    font-size: 24px;
+    text-shadow:
+    1px 1px 0 var(--background-alpha),
+    -1px 1px 0 var(--background-alpha),
+    -1px -1px 0 var(--background-alpha),
+    1px -1px 0 var(--background-alpha);
     font-weight: 700;
 }
 
@@ -190,6 +213,11 @@ h3 {
 
 h4 {
     font-size: 16px;
+    text-shadow:
+    1px 1px 0 var(--background-alpha),
+    -1px 1px 0 var(--background-alpha),
+    -1px -1px 0 var(--background-alpha),
+    1px -1px 0 var(--background-alpha);
 }
 
 /* Anchors */
@@ -260,7 +288,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     align-items: center;
     flex: 0 1 50px;
     width: 100%;
-    background-color: var(--darken-area5);
+    background-color: var(--background-color);
     border-width: 4px;
 }
 
