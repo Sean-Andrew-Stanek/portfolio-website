@@ -469,24 +469,30 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .work-example-repository-button:hover {
-    border-color: var(--primary-color-link);
-    background-color: var(--primary-color-contrast10);
-
     background-clip: text;
-    color: transparent;
+    border-color: var(--primary-color-link);
+    background-color: var(--primary-color-link);
 
-    animation: work-example-repository-button-animation 0.5s infinite;
+    
+
+    /* animation: ease-in-out work-example-repository-button-animation 5s infinite; */
+}
+
+.work-example-repository h3:hover {
+    color: transparent;
+    text-shadow: none;
 }
 
 @keyframes work-example-repository-button-animation {
     0% {
-        background-color: var(--primary-color-contrast10);
+        background-color: var(--primary-color-link);
     }
     50% {
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
+        background-color: var(--primary-color-contrast10);
     }
     100% {
-        background-color: var(--primary-color-contrast10);
+        background-color: var(--primary-color-link);
     }
 }
 
