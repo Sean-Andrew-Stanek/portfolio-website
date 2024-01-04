@@ -76,6 +76,46 @@
     }
 }
 
+.case-study-main {
+    margin: 10px 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-main h1, h2, span{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.case-study-main *{
+    opacity: .1;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10%;
+    animation-range-end: 25%;
+}
+
+.case-study-main img {
+    width: 40vw;
+}
+
+.case-study-main span > img {
+    width: 20vw;
+}
+
+.case-study-main h4{
+    background: var(--highlight-gradient);
+    display: block;
+}
+
+@keyframes fade-in {
+    to { opacity: 1;}
+}
+
+.case-study-main h3 {
+    background: linear-gradient(to left, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.2) 100%);
+}
 
 
 svg * {
@@ -213,16 +253,17 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h4 {
-    font-size: 16px;
-    text-shadow:
+    font-size: 18px;
+    font-weight: 100;
+/*     text-shadow:
     1px 1px 0 var(--background-alpha),
     -1px 1px 0 var(--background-alpha),
     -1px -1px 0 var(--background-alpha),
-    1px -1px 0 var(--background-alpha);
+    1px -1px 0 var(--background-alpha); */
 }
 
 /* Anchors */
