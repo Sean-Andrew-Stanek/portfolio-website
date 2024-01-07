@@ -176,9 +176,15 @@ a:active {
     flex-direction: row;
 }
 
+.case-study-main-nav-preview * {
+    margin: auto 0;
+}
+
 .case-study-main div > img {
-    width: 400px;
+    max-height: 400px;
+    max-width: 80vw;
     margin: 10px;
+    border: solid white 2px;
 }
 
 .case-study-main div > h3 {
@@ -188,6 +194,7 @@ a:active {
 .case-study-main h2 > div > img {
     height: 100px;
     width: 100px;
+    border: none;
 }
 
 .case-study-main h4{
