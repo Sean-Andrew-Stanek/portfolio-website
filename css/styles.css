@@ -42,6 +42,39 @@
     /* Secondary "Light Mode" WIP */
 }
 
+html {
+    background-image: url("../img/Perlin.png");
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color-contrast9);
+    text-shadow:
+    1px 1px 0 var(--background-alpha),
+    -1px 1px 0 var(--background-alpha),
+    -1px -1px 0 var(--background-alpha),
+    1px -1px 0 var(--background-alpha);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    min-height: 100dvh;
+}
+
+/* Anchors */
+
+a:link, a:visited {
+    color: var(--primary-color-link);
+}
+
+a:hover, a:focus {
+    color: var(--primary-color-contrast10);
+}
+
+a:active {
+    color: var(--primary-color);
+}
+
 @keyframes color-change {
     0% {
         fill: #EDC655;
@@ -76,6 +109,18 @@
     }
 }
 
+.case-study-main *{
+    opacity: .1;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10%;
+    animation-range-end: 25%;
+}
+
+@keyframes fade-in {
+    to { opacity: 1;}
+}
+
 .case-study-main {
     margin: 10px 8vw;
     display: flex;
@@ -86,22 +131,63 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 0px;
 }
 
-.case-study-main *{
-    opacity: .1;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: 10%;
-    animation-range-end: 25%;
+.case-study-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    background-color: var(--background-alpha);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color-contrast10);
+
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    animation: none;
+
+    transition: color .1s, background-color .1s, border-color .1s;
 }
 
-.case-study-main img {
-    width: 40vw;
+.case-study-button:hover {
+    text-shadow: none;
+    color: var(--background-color);
+    border-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 255, 255, 0.8);
+    transition: color .2s, background-color .2s, border-color .2s;
 }
 
-.case-study-main span > img {
-    width: 20vw;
+.case-study-button > div:hover {
+    pointer-events: none;
+}
+
+.case-study-main-nav-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.case-study-main-nav-preview > div {
+    flex-direction: row;
+}
+
+.case-study-main div > img {
+    width: 400px;
+    margin: 10px;
+}
+
+.case-study-main div > h3 {
+    background: transparent;
+}
+
+.case-study-main h2 > div > img {
+    height: 100px;
+    width: 100px;
 }
 
 .case-study-main h4{
@@ -109,9 +195,7 @@
     display: block;
 }
 
-@keyframes fade-in {
-    to { opacity: 1;}
-}
+
 
 .case-study-main h3 {
     background: linear-gradient(to left, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.2) 100%);
@@ -144,25 +228,6 @@ svg * {
 
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-html {
-    background-image: url("../img/Perlin.png");
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--background-color);
-    color: var(--primary-color-contrast9);
-    text-shadow:
-    1px 1px 0 var(--background-alpha),
-    -1px 1px 0 var(--background-alpha),
-    -1px -1px 0 var(--background-alpha),
-    1px -1px 0 var(--background-alpha);
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 400;
-    min-height: 100dvh;
 }
 
 .about-flex {
@@ -266,28 +331,7 @@ h4 {
     1px -1px 0 var(--background-alpha); */
 }
 
-/* Anchors */
 
-a:link, a:visited {
-    color: var(--primary-color-link);
-}
-
-a:hover, a:focus {
-    color: var(--primary-color-contrast10);
-}
-
-/* I need to figure out how to use this without it affecting the top anchor
-
-a:focus {
-    text-decoration: none;
-    outline-color: #99FFFF;
-    outline-style: solid;
-    outline-width: 2px;
-} */
-
-a:active {
-    color: var(--primary-color);
-}
 
 /* Buttons */
 
