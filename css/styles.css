@@ -170,6 +170,7 @@ a:active {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 10px;
 }
 
 .case-study-main-nav-preview > div {
@@ -182,7 +183,7 @@ a:active {
 
 .case-study-main div > img {
     max-height: 400px;
-    max-width: 80vw;
+    max-width: 40vw;
     margin: 10px;
     border: solid white 2px;
 }
@@ -206,6 +207,7 @@ a:active {
 
 .case-study-main h3 {
     background: linear-gradient(to left, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.2) 100%);
+    text-align: center;
 }
 
 
@@ -499,7 +501,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .work-example-repository a {
     text-decoration: none;
-    margin-right: auto;
+    
 }
 
 .work-example-repository h3 {
@@ -532,6 +534,14 @@ button:hover, button:focus, .button:hover, .button:focus {
 .work-example-repository h3:hover {
     color: transparent;
     text-shadow: none;
+}
+
+.enlarge-on-hover {
+    transition: transform .2s ease-in;
+    z-index: 999;
+}
+.enlarge-on-hover:hover{
+    transform: scale(1.3);    
 }
 
 @keyframes work-example-repository-button-animation {
